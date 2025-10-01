@@ -1,0 +1,19 @@
+{
+  "name": "stake-simple-slot",
+  "version": "1.0.0",
+  "description": "Stake Engine compatible simple slot game (3x5 reels)",
+  "type": "module",
+  "scripts": {
+    "generate": "node tools/generate_books.js",
+    "verify": "node tools/verify_package.js",
+    "install:frontend": "cd frontend && npm install",
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "pack": "bash pack.sh",
+    "compress": "zstd -19 --long math/books_base.jsonl -o math/books_base.jsonl.zst"
+  },
+  "dependencies": {
+    "seedrandom": "^3.0.5"
+  },
+  "devDependencies": {}
+}
